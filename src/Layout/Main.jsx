@@ -6,6 +6,7 @@ const Main = () => {
         <div>
             <Outlet/>
             <Footer />
+            {/* /jkj */}
         </div>
     );
 };
