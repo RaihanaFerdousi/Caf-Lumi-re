@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../../assets/Logo.png';
-
+// abc
 const Footer = () => {
     return (
         <footer className="bg-[#170e03] text-white py-12">
@@ -15,7 +15,7 @@ const Footer = () => {
 
                     {/* Column 2 - Quick Links */}
                     <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
-                        <h4 className="font-semibold text-xl mb-4">Quick Links</h4>
+                        <h4 className="font-semibold text-xl mb-4">Quick Links</h4> 
                         <div className="space-y-3 flex flex-col">
                             <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Home</a>
                             <a href="#menu" className="text-gray-400 hover:text-white transition-colors duration-300">Menu</a>
