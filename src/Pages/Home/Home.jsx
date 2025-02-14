@@ -1,10 +1,11 @@
 import React from 'react';
 import ContactUs from './ContactUs';
+import Banner from './Banner/Banner';
 
 const Home = () => {
     return (
         <div>
-            <ContactUs></ContactUs>
+            <Banner/>
         </div>
     );
 };
