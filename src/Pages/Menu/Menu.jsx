@@ -6,7 +6,6 @@ const Menu = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Adjust the endpoint if necessary
     fetch('https://cafe-lumiere-server.vercel.app/menu')
       .then(response => {
         if (!response.ok) {
