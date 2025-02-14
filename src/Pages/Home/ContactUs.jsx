@@ -5,7 +5,7 @@ const ContactUs = () => {
     return (
         <section id="contact" className="bg-[#090407] text-white py-16 px-6 rounded-2xl mx-4 my-12 shadow-xl">
             <div className="container mx-auto max-w-4xl text-center">
-                <h2 className="text-4xl font-bold mb-6 text-[#c19a6b]">Get in Touch</h2>
+                <h2 className="text-5xl font-bold mb-6 text-[#c19a6b]">Get in Touch</h2>
                 <p className="text-lg mb-8 text-[#a77a4d]">
                     We’d love to hear from you! Whether it’s a question, feedback, or a reservation inquiry, reach out to us.
                 </p>
