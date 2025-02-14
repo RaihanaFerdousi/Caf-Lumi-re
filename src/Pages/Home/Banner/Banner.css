@@ -1,0 +1,14 @@
+.banner {
+    background-image: url('../../../assets/pexels-anete-lusina-5722871.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), transparent);
+  }
+  
