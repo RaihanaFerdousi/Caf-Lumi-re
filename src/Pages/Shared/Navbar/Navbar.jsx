@@ -1,5 +1,6 @@
 import { useState } from "react";
-import logo from '../../../assets/Logo.png'
+import { Link } from "react-router-dom";
+import logo from "../../../assets/Logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,37 +9,37 @@ const Navbar = () => {
     <nav className="bg-white shadow-md p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <a href="#" className="flex items-center text-2xl font-bold text-black">
-        <img className="w-10" src={logo} alt="" />
-        Café Lumière
-        </a>
+        <Link to="/" className="flex items-center text-2xl font-bold text-black">
+          <img className="w-10" src={logo} alt="Café Lumière Logo" />
+          Café Lumière
+        </Link>
 
         {/* Desktop Navbar Links */}
         <ul className="hidden md:flex space-x-6">
           <li>
-            <a href="#" className="text-black hover:text-[#8f6146] font-semibold">
+            <Link to="/" className="text-black hover:text-[#8f6146] font-semibold">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="text-black hover:text-[#8f6146] font-semibold">
-              Care Guide
-            </a>
+            <Link to="/menu" className="text-black hover:text-[#8f6146] font-semibold">
+              Menu
+            </Link>
           </li>
           <li>
-            <a href="#" className="text-black hover:text-[#8f6146] font-semibold">
+            <Link to="/blog" className="text-black hover:text-[#8f6146] font-semibold">
               Blog
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="text-black hover:text-[#8f6146] font-semibold">
+            <Link to="/gallery" className="text-black hover:text-[#8f6146] font-semibold">
               Gallery
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="text-black hover:text-[#8f6146] font-semibold">
+            <Link to="/contact" className="text-black hover:text-[#8f6146] font-semibold">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -54,21 +55,21 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white border-t p-4">
-          <a href="#" className="block py-2 text-black hover:text-[#8f6146] font-semibold">
+          <Link to="/" className="block py-2 text-black hover:text-[#8f6146] font-semibold">
             Home
-          </a>
-          <a href="#" className="block py-2 text-black hover:text-[#8f6146] font-semibold">
-            Care Guide
-          </a>
-          <a href="#" className="block py-2 text-black hover:text-[#8f6146] font-semibold">
+          </Link>
+          <Link to="/menu" className="block py-2 text-black hover:text-[#8f6146] font-semibold">
+            Menu
+          </Link>
+          <Link to="/blog" className="block py-2 text-black hover:text-[#8f6146] font-semibold">
             Blog
-          </a>
-          <a href="#" className="block py-2 text-black hover:text-[#8f6146] font-semibold">
+          </Link>
+          <Link to="/gallery" className="block py-2 text-black hover:text-[#8f6146] font-semibold">
             Gallery
-          </a>
-          <a href="#" className="block py-2 text-black hover:text-[#8f6146] font-semibold">
+          </Link>
+          <Link to="/contact" className="block py-2 text-black hover:text-[#8f6146] font-semibold">
             Contact
-          </a>
+          </Link>
         </div>
       )}
     </nav>
